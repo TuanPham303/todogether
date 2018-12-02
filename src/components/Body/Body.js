@@ -4,8 +4,8 @@ import PersonalCard from '../PersoncalCard/PersonalCard';
 class Body extends Component {
   render() {
     return (
-      <div className="App">
-        This is the body
+      <div className="Body">
+        {/* This is the body */}
         <PersonalCard />
       </div>
     );

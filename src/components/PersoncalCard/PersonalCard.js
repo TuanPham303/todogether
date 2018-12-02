@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Task from '../Task/Task';
 
 class PersonalCard extends Component {
   render() {
     return (
-      <div className="App">
-        This is the personal card
+      <div className="PersonalCard">
+        {/* This is the personal card */}
+        <Task />
       </div>
     );
   }
