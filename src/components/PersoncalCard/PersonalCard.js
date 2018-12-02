@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
 import CardBody from '../CardBody/CardBody';
+import React, { Component, Fragment } from 'react';
+import './PersonalCard.css';
 
 class PersonalCard extends Component {
   render() {
     return (
-      <div className="PersonalCard">
-        {/* This is the personal card */}
-        <CardBody />
-      </div>
+      <Fragment>
+        <div className='personalCardWrapper'>
+          <header>
+            {this.props.name}
+          </header>
+          <CardBody />
+        </div>
+      </Fragment>
     );
   }
 }
