@@ -1,3 +1,4 @@
+import CardBody from '../CardBody/CardBody';
 import React, { Component, Fragment } from 'react';
 import './PersonalCard.css';
 
@@ -9,6 +10,7 @@ class PersonalCard extends Component {
           <header>
             {this.props.name}
           </header>
+          <CardBody />
         </div>
       </Fragment>
     );
