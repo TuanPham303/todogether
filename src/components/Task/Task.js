@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './Task.css';
 
+const uuidv4 = require('uuid/v4');
+
 class Task extends Component {
   constructor(props) {
 		super(props);
 		this.state = {
 			isChecked: false,
+			id: uuidv4(),
 		}
 	}
 
@@ -28,13 +31,13 @@ class Task extends Component {
 		return (
 			<div className="inputGroup">
 				<input 
-				id={label}
+				id={this.state.id}
 				type="checkbox"
 				value={label}
 				checked={isChecked}
 				onChange={this.toggleCheckboxChange}
 				/>
-        <label for={label}>
+        <label htmlFor={this.state.id}>
           {label}
         </label>
 			</div>
